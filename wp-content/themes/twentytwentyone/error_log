@@ -1,0 +1,12 @@
+[24-Mar-2024 07:52:27 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php on line 17
+[18-Jun-2024 13:07:31 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php on line 17
+[14-Jul-2024 00:52:53 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_header() in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-content/themes/twentytwentyone/index.php on line 17

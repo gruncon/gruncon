@@ -15,9 +15,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Ignorar archivos de WordPress innecesarios
-wp-admin/
-wp-includes/
-wp-content/plugins/
-wp-content/themes/
 

@@ -1,0 +1,4 @@
+[01-Sep-2023 15:53:03 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Class "WPForms\SmartTags\SmartTag\SmartTag" not found in /home/crestag1/public_html/wp-content/plugins/wpforms-lite/src/SmartTags/SmartTag/Generic.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-content/plugins/wpforms-lite/src/SmartTags/SmartTag/Generic.php on line 10

@@ -8,8 +8,8 @@
 <channel>
 	<title>
 	Comentarios en GRUNCON	</title>
-	<atom:link href="https://gruncon.github.io/gruncon/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>https://gruncon.github.io/gruncon/</link>
+	<atom:link href="https://gruncon.github.io/gruncon//comments/feed/" rel="self" type="application/rss+xml" />
+	<link>https://gruncon.github.io/gruncon//</link>
 	<description>muros industriales</description>
 	<lastBuildDate>Thu, 23 Feb 2023 12:37:06 +0000</lastBuildDate>
 	<sy:updatePeriod>
@@ -20,7 +20,7 @@
 	<item>
 		<title>
 		Comentario en Hello world! por A WordPress Commenter		</title>
-		<link>https://gruncon.github.io/gruncon/hello-world/#comment-1</link>
+		<link>https://gruncon.github.io/gruncon//hello-world/#comment-1</link>
 
 		<dc:creator><![CDATA[A WordPress Commenter]]></dc:creator>
 		<pubDate>Thu, 23 Feb 2023 12:37:06 +0000</pubDate>

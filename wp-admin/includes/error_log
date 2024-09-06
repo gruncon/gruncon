@@ -1,0 +1,56 @@
+[13-Jun-2023 13:01:03 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/crestag1/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/admin.php on line 16
+[20-Aug-2023 12:43:43 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/crestag1/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/admin.php on line 16
+[03-Sep-2023 19:52:34 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function get_locale() in /home/crestag1/public_html/wp-admin/includes/admin.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/admin.php on line 16
+[28-Dec-2023 03:40:45 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[28-Dec-2023 03:40:49 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[16-Feb-2024 21:56:33 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[28-Feb-2024 07:19:55 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[17-Mar-2024 10:37:38 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[31-Mar-2024 01:13:47 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[06-Apr-2024 03:54:20 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[18-Apr-2024 02:31:39 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[29-Apr-2024 16:24:21 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[02-May-2024 07:58:10 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
+[23-May-2024 12:44:05 America/Argentina/Buenos_Aires] PHP Fatal error:  Uncaught Error: Call to undefined function __() in /home/crestag1/public_html/wp-admin/includes/file.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/crestag1/public_html/wp-admin/includes/file.php on line 16
