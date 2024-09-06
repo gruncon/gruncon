@@ -1,0 +1,23 @@
+# Ignorar archivos que no necesitas en GitHub Pages
+*.DS_Store
+*.log
+*.sql
+*.zip
+
+# Archivos de construcción local
+node_modules/
+vendor/
+.env
+.idea/
+.vscode/
+*.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de WordPress innecesarios
+wp-admin/
+wp-includes/
+wp-content/plugins/
+wp-content/themes/
+
