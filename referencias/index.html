@@ -39,7 +39,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 <link rel="stylesheet" id="swiper-css" href="https://gruncon.github.io/gruncon//wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-pro-css" href="https://gruncon.github.io/gruncon//wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.11.3" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://gruncon.github.io/gruncon//wp-content/uploads/elementor/css/global.css?ver=1725734753" media="all">
-<link rel="stylesheet" id="elementor-post-21-css" href="https://gruncon.github.io/gruncon//wp-content/uploads/elementor/css/post-21.css?ver=1725803613" media="all">
+<link rel="stylesheet" id="elementor-post-21-css" href="https://gruncon.github.io/gruncon//wp-content/uploads/elementor/css/post-21.css?ver=1725804979" media="all">
 <link rel="stylesheet" id="elementor-post-10-css" href="https://gruncon.github.io/gruncon//wp-content/uploads/elementor/css/post-10.css?ver=1725790469" media="all">
 <link rel="stylesheet" id="elementor-post-64-css" href="https://gruncon.github.io/gruncon//wp-content/uploads/elementor/css/post-64.css?ver=1725734878" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Barlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSaira+Stencil+One%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.6.1" media="all">
@@ -175,6 +175,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta de Interés</title>
     <style>body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -182,7 +183,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             background-color: #D8D8D6; /* Color de fondo */
         }
         .container {
-            width: 80%; /* Ajusta el ancho al 80% del viewport */
+            width: 80%;
             max-width: 1200px;
             margin: auto;
             background: #fff;
@@ -212,14 +213,10 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             border-radius: 5px;
             width: 100%;
         }
-        input[type="radio"],
-        input[type="checkbox"] {
-            margin-right: 10px;
-        }
         input[type="submit"] {
             margin-top: 20px;
             padding: 15px;
-            background-color: #A57378; /* Color personalizado del botón */
+            background-color: #A57378;
             color: white;
             border: none;
             border-radius: 5px;
@@ -227,7 +224,14 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
             font-size: 1.2em;
         }
         input[type="submit"]:hover {
-            background-color: #8E4F53; /* Color más oscuro al pasar el ratón */
+            background-color: #8E4F53;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 1.2em;
+            text-align: center;
+            color: green;
+            display: none; /* Oculto inicialmente */
         }</style>
 
 
@@ -299,9 +303,8 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         <input type="text" name="entry.28364590" id="telefono" placeholder="Tu teléfono" required>
 
         <input type="submit" value="Enviar">
-
     </form>
-    <div class="message" id="message"></div>
+    <div class="message" id="message">¡Gracias por completar la encuesta!</div>
 </div>
 
 <script>document.getElementById('google-form').addEventListener('submit', function (e) {
@@ -312,18 +315,26 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
         const message = document.getElementById('message');
 
         xhr.open('POST', 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSfNFLQJH17TBF8_6BN24fLV0CBTlQPBfvSyqy0PyLyIZQD_mg/formResponse', true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 
         xhr.onload = function () {
-            if (xhr.status === 200) {
-                message.innerHTML = '¡Gracias por completar la encuesta!';
-                message.style.color = 'green';
+            if (xhr.status === 200 || xhr.status === 0) {
+                // Mostrar mensaje de éxito dentro del widget
+                message.style.display = 'block';
+                document.getElementById('google-form').style.display = 'none'; // Ocultar el formulario después de enviar
             } else {
                 message.innerHTML = 'Hubo un error al enviar el formulario. Inténtalo de nuevo.';
                 message.style.color = 'red';
+                message.style.display = 'block';
             }
         };
 
-        xhr.send(form);
+        let formEntries = [];
+        for (let [key, value] of form.entries()) {
+            formEntries.push(encodeURIComponent(key) + '=' + encodeURIComponent(value));
+        }
+
+        xhr.send(formEntries.join('&'));
     });</script>
 
 
